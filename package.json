@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node ./bin/server.js"
+    "start": "nodemon ./bin/server.js"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +17,8 @@
     "http": "^0.0.1-security",
     "jsonwebtoken": "^7.4.0",
     "md5": "^2.3.0",
-    "mongoose": "^8.0.3"
+    "mongoose": "^8.0.3",
+    "dotenv": "^8.2.0"
   },
   "devDependencies": {
     "nodemon": "^3.0.2"
