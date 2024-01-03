@@ -3,12 +3,12 @@
   "version": 2,
   "builds": [
     {
-      "bin": "server.js",
+      "src": "bin/server.js",
       "use": "@now/node"
     }
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/.*", "dest": "/src/app.js" }
+    { "src": "/.*", "dest": "src/app.js" }
   ]
 }
