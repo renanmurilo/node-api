@@ -9,6 +9,6 @@
   ],
   "routes": [
     { "handle": "filesystem" },
-    { "src": "/.*", "dest": "bin/server.js" }
+    { "src": "/(.*)", "dest": "bin/server.js" }
   ]
 }
