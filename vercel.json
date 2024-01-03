@@ -1,12 +1,6 @@
 {
   "public": true,
   "version": 2,
-  "builds": [
-    {
-      "src": "bin/server.js",
-      "use": "@now/node"
-    }
-  ],
   "routes": [
     { "handle": "filesystem" },
     { "src": "/.*", "dest": "src/app.js" }
