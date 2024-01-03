@@ -1,5 +1,4 @@
 {
-  "public": true,
   "version": 2,
   "builds": [
     {
@@ -8,7 +7,6 @@
     }
   ],
   "routes": [
-    { "handle": "filesystem" },
-    { "src": "/(.*)", "dest": "src/app.js" }
+    { "src": "/(.*)", "dest": "bin/server.js" }
   ]
 }
