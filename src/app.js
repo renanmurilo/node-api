@@ -3,6 +3,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
+const cors = require("cors");
 const config = require('./config')
 
 const app = express();
@@ -26,6 +27,7 @@ app.use(bodyParser.json({
   limit: '5mb'
 }));
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(cors());
 
 //Habilita o CORS
 app.use(function (req, res, next) {
