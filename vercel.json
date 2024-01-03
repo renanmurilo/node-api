@@ -3,12 +3,12 @@
   "version": 2,
   "builds": [
     {
-      "src": "bin/start.js",
+      "src": "bin/server.js",
       "use": "@now/node"
     }
   ],
   "routes": [
-    { "src": "/api/(.*)", "dest": "src/$1" },
-    { "handle": "filesystem" }
+    { "handle": "filesystem" },
+    { "src": "/.*", "dest": "bin/server.js" }
   ]
 }
