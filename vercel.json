@@ -3,6 +3,6 @@
   "version": 2,
   "routes": [
     { "handle": "filesystem" },
-    { "src": "src/app.js(.*)", "dest": "bin/server.js" }
+    { "src": "src/(.*)", "dest": "bin/server.js" }
   ]
 }
